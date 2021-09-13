@@ -190,3 +190,89 @@
   - 混雑状況により到着が遅くなる可能性
   - パケットが失われる可能性
   - パケットの順番が変わる可能性
+
+## インターネットの歴史と展望
+
+- 1970年代ARPAによるインターネット技術の研究
+  - パケット交換のアイデア
+    - ARPANETで実現
+  - 相互接続
+
+- インターネットリサーチグループ (Internet Research Group)
+  - ARPA資金、ARPANETで実験
+  - 後にInternet Control COnfiguraation Board (ICCB) → IAB
+
+- 1980年代 global internetの研究
+  - ARPAがARPANETのプロトコルをTCP/IPプロトコルに変更
+  - TCP/IPの実験
+  - ARPANETの役割
+    - 研究用: ARPANET
+    - 軍事用: MILNET
+
+- BSD UNIX
+  - California大学のBerkeley Software Distribution (BSD)のUNIXクローンOS
+  - TCP/IPの低コストな利用
+  - アプリケーションプログラムも
+  - ソケット（socket）の概念
+
+- NSF NET
+  - NSFがComputer Science NETwork(CSNET)プロジェクトに資金提供
+  - NSF NET長距離バックボーンNW
+
+- 急激な拡張
+  - 大学、政府、企業の研究所、政府出資プロジェクト→一般企業
+  - 予想されなかった**規模**の問題
+    例: 分散資源技術の必要性 → hostsファイルアドレス管理 → dns(Domain Name System)
+
+### Internet Architecture Board (IAB)
+
+- IAB [https://www.iab.org](https://www.iab.org)
+  - Internetプロトコル標準を決定、発行
+  - ICCB→IAB
+- IAB
+  - Internet Rearch Task FOrch(IRTF) --- IRS(tering)G --- WGs
+  - Internet Engineering Task Force(IETF) --- IESG --- WGs [https://www.ietf.org](https://www.ietf.org)
+
+### インターネット学会(ISOC)
+
+- 政府からはなれている目的で設立: 米国政府によるInternetの普及
+- 組織
+  - ISOC
+    - IAB
+      - IRTF
+        - IRSG
+      - IETF
+        - IESG
+      - ICANN
+        - InternetNIC
+        - RIPE
+        - APNIC
+          - JPNIC
+
+- IANA(Internet Assigned Numbers Authority) = Jon Postel
+  - RFC1700 Assigned Numbers
+    - ICANN(Internet Corporation for Assigned Name and Numbers)
+      - IPアドレス、ドメイン名、ポート番号など番号、記号の標準化登録管理
+
+1. インターネットの3つの識別子の割り振り・割当を全世界的かつ一意に行うシステムの調整
+    - ドメイン名
+    - IPアドレスおよび自律システム（AS）番号
+    - プロトコルポート番号およびパラメータ番号
+2. 13個あるNDSルートサーバーシステムの運用および展開の調整
+3. これらの技術的業務に関連するポリシー策定の調整
+
+### Internet Request for Comments(RFC)
+
+- Internet関連の文書
+- IETFが標準化処理に責任、文書管理、編集
+- RFC番号
+
+- RFC標準化(Standard Track)
+  - IESG承認
+    1. PS: Proposal Standard RFC番号が割り振られstandardtrackの間使われる  提案 → 2つ以上の実装
+    2. S: Standard STD番号が割り振られる 標準
+
+- 標準化処理以外
+  - Informational
+  - Experimental
+  - Historic
